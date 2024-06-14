@@ -31,6 +31,7 @@ void main() {
   // // print(mascota1.getEdad());
   print('Objeto de la instancia: ${mascota1.hashCode} -  ${mascota1.edad}');
   print('Objeto de la instancia: ${mascota2.hashCode} -  ${mascota2.edad}');
+  print(mascota3.edad);
 
   // print(mascota1.toString());
 

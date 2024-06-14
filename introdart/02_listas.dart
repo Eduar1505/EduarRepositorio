@@ -16,10 +16,9 @@ void main() {
 //   postres = [];
   print(postres[0]);
 
-  for (final postre in postres) {
-//     print(postre);
-  }
-
+  //for (final postre in postres) {
+  //     print(postre);
+  //}
   // final copia_postres = postres; //❌ no es una copia
 
   //? Desestructuración, con el operador spread

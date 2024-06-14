@@ -11,7 +11,7 @@ void main() {
     1: 'Admin',
     2: 'Cajero',
   };
-
+  print(roles);
   print(persona['nombre']);
 
   persona['nombre'] = 'enrique';
@@ -30,7 +30,7 @@ void main() {
   final copia = {...persona};
 
   // print(persona);
-
+  print(copia);
   persona.clear(); //limpiar el Map
 
   persona.entries.forEach((element) {

@@ -22,7 +22,7 @@ void main() {
 //   nombre = 10; // no se puede cambiar el tipo de dato
   apellido = "Alvarenga";
   print(apellido);
-//   apelido = ''; // ya no puede cambiar
+//   apellido = ''; // ya no puede cambiar
 
   final int edad = 30;
   print(edad);

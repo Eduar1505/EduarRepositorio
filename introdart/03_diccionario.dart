@@ -1,7 +1,7 @@
 void main() {
   final Map<String, dynamic> persona = {
-    'nombre': 'Juan',
-    'edad': 30,
+    'nombre': 'Eduar',
+    'edad': 19,
     'comidas_favoritas': ['Pizza', 'Sopas'],
     'es_mayor': true,
     'geo': {'lat': 14.123123, 'lng': -87.123123}
@@ -14,7 +14,7 @@ void main() {
   print(roles);
   print(persona['nombre']);
 
-  persona['nombre'] = 'enrique';
+  persona['nombre'] = 'Ernesto';
   persona['direccion'] = "UNAH-VS";
 
   persona.remove('geo'); //eliminar una propiedad
@@ -22,7 +22,7 @@ void main() {
   // permite agregar mas propiedades al Map
   persona.addAll({
     'telefono': '123456789',
-    'edad': 31,
+    'edad': 20,
     'es_mayor': false,
   });
 

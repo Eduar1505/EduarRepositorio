@@ -20,7 +20,7 @@ void main() {
   print(host);
 
 //   nombre = 10; // no se puede cambiar el tipo de dato
-  apellido = "Alvarenga";
+  apellido = "Ventura";
   print(apellido);
 //   apellido = ''; // ya no puede cambiar
 

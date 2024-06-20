@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,10 @@ class MyApp extends StatelessWidget {
     //Se usa MaterialApp por el package importado
     return MaterialApp(
       title: 'Mi primer app',
+
+      theme: ThemeData(),
+      darkTheme: ThemeData.dark(),
+
       //theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -19,20 +24,21 @@ class MyApp extends StatelessWidget {
           //centerTitle: false,
           // ignore: prefer_const_constructors
           backgroundColor: Color.fromARGB(210, 25, 81, 21),
-
           title: const Align(
             alignment: Alignment.topCenter,
             child: Text('Bienvenidos'),
           ),
         ),
         drawer: const Drawer(),
-        body: const Center(child: Text('Hola Mundo')),
+        body: const Center(
+          child: Text('Hola Mundo'),
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           // ignore: prefer_const_constructors
           child: Icon(
             Icons.add_circle_outline_sharp,
-            color: const Color.fromARGB(249, 72, 27, 206),
+            color: const Color.fromARGB(248, 239, 5, 52),
           ),
         ),
       ),

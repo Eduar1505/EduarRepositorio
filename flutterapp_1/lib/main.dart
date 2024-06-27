@@ -1,47 +1,29 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterapp_1/home_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
+// 1. Statefullwidget (con estado)
+// 2. Statelesswidget (sin estado)
+
 // ignore: non_constant_identifier_names, use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
+  int contador = 0;
+
   // ignore: unused_element
   @override
   Widget build(BuildContext context) {
     //Se usa MaterialApp por el package importado
+    // ignore: prefer_const_constructors
     return MaterialApp(
       title: 'Mi primer app',
-
-      theme: ThemeData(),
-      darkTheme: ThemeData.dark(),
-
+      // theme: ThemeData(),
+      // darkTheme: ThemeData.dark(),
       //theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          //centerTitle: false,
-          // ignore: prefer_const_constructors
-          backgroundColor: Color.fromARGB(210, 25, 81, 21),
-          title: const Align(
-            alignment: Alignment.topCenter,
-            child: Text('Bienvenidos'),
-          ),
-        ),
-        drawer: const Drawer(),
-        body: const Center(
-          child: Text('Hola Mundo'),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          // ignore: prefer_const_constructors
-          child: Icon(
-            Icons.add_circle_outline_sharp,
-            color: const Color.fromARGB(248, 239, 5, 52),
-          ),
-        ),
-      ),
+      home: HomePage(contador: 40),
     );
   }
 }

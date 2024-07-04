@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                     size: 100,
                   ),
                   Text(
-                    'La ruta " ${settings.name} " no existe',
+                    'La Ruta " ${settings.name} " No Existe',
                     style: const TextStyle(
                         fontSize: 30, fontWeight: FontWeight.bold),
                   ),

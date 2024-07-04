@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'home', // debe ser una ruta previamente definida
       routes: {
         'home': (context) => const HomePage(),
-        'listas': (context) => const ListasPage()
+        'listas': (context) => ListasPage()
       },
       onGenerateRoute: (settings) {
         return MaterialPageRoute(

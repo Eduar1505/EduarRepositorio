@@ -9,8 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // ignore: prefer_const_constructors
-        title: Text('Componentes'),
+        title: const Text('Componentes'),
       ),
       body: Center(
         child: Column(
@@ -19,7 +18,7 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed('listas', arguments: {
-                  'usuario': 'EduarVentura',
+                  'usuario': 'Eduar Ventura',
                   'rol': 'Estudiante',
                   'anio': 2024
                 });

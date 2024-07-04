@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutterapp_1/home_page.dart';
 
@@ -5,25 +7,29 @@ void main() {
   runApp(MyApp());
 }
 
-// 1. Statefullwidget (con estado)
-// 2. Statelesswidget (sin estado)
+// 1. StatefullWidget (con estado)
+// 2. StatelessWidget (sin estado)
 
-// ignore: non_constant_identifier_names, use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
-  int contador = 0;
+  MyApp({super.key});
 
-  // ignore: unused_element
+  String getTitulo() {
+    final titulos = ['Mi Super App', 'Hello World', 'Hola Mundo'];
+
+    int randomIndex = Random().nextInt(3);
+
+    return titulos[randomIndex];
+  }
+
   @override
   Widget build(BuildContext context) {
-    //Se usa MaterialApp por el package importado
-    // ignore: prefer_const_constructors
     return MaterialApp(
-      title: 'Mi primer app',
-      // theme: ThemeData(),
-      // darkTheme: ThemeData.dark(),
-      //theme: ThemeData(useMaterial3: false),
+      title: 'Mi Primer App',
       debugShowCheckedModeBanner: false,
-      home: HomePage(contador: 40),
+      home: HomePage(
+        titulo: getTitulo(),
+        contador: 10,
+      ),
     );
   }
 }

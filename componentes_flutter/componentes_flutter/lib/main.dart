@@ -1,4 +1,5 @@
 import 'package:componentes_flutter/home_page.dart';
+import 'package:componentes_flutter/imagenes_page.dart';
 import 'package:componentes_flutter/listas_page.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
                     size: 100,
                   ),
                   Text(
-                    'La Ruta " ${settings.name} " No Existe',
+                    'La Ruta " ${settings.name} " No Existe...',
                     style: const TextStyle(
                         fontSize: 30, fontWeight: FontWeight.bold),
                   ),

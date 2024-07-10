@@ -5,41 +5,18 @@ class ListasPage extends StatelessWidget {
   ListasPage({super.key});
 
   final postres = [
-    {'nombre': 'Torta de chocolate', 'calorias': 400},
-    {'nombre': 'Helado', 'calorias': 200},
-    {'nombre': 'Galletas', 'calorias': 300},
-    {'nombre': 'Cupcake', 'calorias': 500},
-    {'nombre': 'Brownie', 'calorias': 450},
-    {'nombre': 'Donas', 'calorias': 350},
-    {'nombre': 'Pastel', 'calorias': 600},
-    {'nombre': 'Cheesecake', 'calorias': 700},
-    {'nombre': 'Churros', 'calorias': 250},
-    {'nombre': 'Muffin', 'calorias': 350},
-    {'nombre': 'Pie', 'calorias': 500},
-    {'nombre': 'Tiramisu', 'calorias': 600},
-    {'nombre': 'Macarons', 'calorias': 300},
-    {'nombre': 'Crepas', 'calorias': 400},
-    {'nombre': 'Flan', 'calorias': 350},
-    {'nombre': 'Cupcake', 'calorias': 500},
-    {'nombre': 'Brownie', 'calorias': 450},
-    {'nombre': 'Donas', 'calorias': 350},
-    {'nombre': 'Pastel', 'calorias': 600},
-    {'nombre': 'Cheesecake', 'calorias': 700},
-    {'nombre': 'Churros', 'calorias': 250},
-    {'nombre': 'Muffin', 'calorias': 350},
-    {'nombre': 'Pie', 'calorias': 500},
-    {'nombre': 'Tiramisu', 'calorias': 600},
-    {'nombre': 'Macarons', 'calorias': 300},
-    {'nombre': 'Crepas', 'calorias': 400},
-    {'nombre': 'Flan', 'calorias': 350},
-    {'nombre': 'Cupcake', 'calorias': 500},
-    {'nombre': 'Brownie', 'calorias': 450},
-    {'nombre': 'Donas', 'calorias': 350},
-    {'nombre': 'Pastel', 'calorias': 600},
-    {'nombre': 'Cheesecake', 'calorias': 700},
-    {'nombre': 'Churros', 'calorias': 250},
-    {'nombre': 'Muffin', 'calorias': 350},
-    {'nombre': 'Pie', 'calorias': 500},
+    {
+      'descripcion':
+          'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It  ',
+      'nombre': 'Torta de chocolate',
+      'calorias': 400
+    },
+    {
+      'descripcion':
+          'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It ',
+      'nombre': 'Helado',
+      'calorias': 200
+    },
   ];
 
   @override

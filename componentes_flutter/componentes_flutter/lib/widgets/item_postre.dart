@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ItemPostre extends StatefulWidget {
-  ItemPostre({super.key, required this.postre});
+  const ItemPostre({super.key, required this.postre});
 
   final Map<String, dynamic> postre;
 
